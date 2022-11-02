@@ -20,7 +20,8 @@
         "question": "char - ",
         "answer": "Character"
       }
-    ]
+    ],
+    "type": "multi-input"
   },
   {
     "points": "0,75",
@@ -59,7 +60,8 @@
         "question": "obaleneCislo = cislo;",
         "asnwer": "OK"
       }
-    ]
+    ],
+    "type": "combobox"
   },
   {
     "points": "1,00",
@@ -78,7 +80,8 @@
         "question": "Typová kompatibilita",
         "asnwer": "Automatická konverzia medzi primitívnym typom a obaľovaciou triedou"
       }
-    ]
+    ],
+    "type": "combobox"
   },
   {
     "points": "1,00",
@@ -87,13 +90,15 @@
     "answer": [
       "vlastná definovaná trieda (napr. class Poznamka)",
       "String"
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
     "maxPoints": "1,00",
     "question": "<p>Napíšte hlavičku cyklu while, ktorý sa bude vykonávať pokiaľ premenná i menej ako 5.</p><p>Dodržujte konvencie<br></p>",
-    "answer": "while (i < 5)"
+    "answer": "while (i < 5)",
+    "type": "single-input"
   },
   {
     "points": "0,00",
@@ -101,7 +106,8 @@
     "question": "<p>Pod pojmom \"obaľovacia trieda\" v Jave rozumieme:<br></p>",
     "answer": [
       "Slúži na \"zaobalenie\" objektového typu do premennej primitívneho typu."
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -112,7 +118,8 @@
         "question": " {",
         "answer": "for (String meno : mena)"
       }
-    ]
+    ],
+    "type": "multi-input"
   },
   {
     "points": "1,00",
@@ -120,7 +127,8 @@
     "question": "<p>Ako sa v jazyku Java volá trieda, v ktorej je implementovaný kontajner s dynamickým počtom prvkom?<br></p>",
     "answer": [
       "ArrayList"
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -131,7 +139,8 @@
         "question": "private  cisla;",
         "answer": "ArrayList<Double>"
       }
-    ]
+    ],
+    "type": "multi-input"
   },
   {
     "points": "1,00",
@@ -139,7 +148,8 @@
     "question": "<p dir=\"ltr\" style=\"text-align: left;\">Na čítanie zo súboru môžme využiť:<br></p>",
     "answer": [
       "Scanner"
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -148,7 +158,8 @@
     "answer": [
       "Posielať správy",
       "Meniť hodnoty atribútov"
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "9,00",
@@ -191,13 +202,15 @@
         "question": "Keď teraz na kontajneri mena vykonáme príkaz String meno = this.mena.remove(0); v premennej meno bude ",
         "answer": "\"Jurko\""
       }
-    ]
+    ],
+    "type": "multi-input"
   },
   {
     "points": "1,00",
     "maxPoints": "1,00",
     "question": "<p>Napíšte príkaz, pomocou ktorého \"vložíte\" do vašej vlastnej triedy truedu ArrayList (tak aby ste ho mohli používať).<br></p>",
-    "answer": "import java.util.ArrayList;"
+    "answer": "import java.util.ArrayList;",
+    "type": "single-input"
   },
   {
     "points": "1,00",
@@ -208,7 +221,8 @@
         "question": "ArrayList<Poznamka> poznamky = ",
         "answer": "new ArrayList<Poznamka>();"
       }
-    ]
+    ],
+    "type": "multi-input"
   },
   {
     "points": "1,00",
@@ -216,7 +230,8 @@
     "question": "<p>Kontajner v OOP predstavuje:<br></p>",
     "answer": [
       "Objekt, ktorý obsahuje viacero objektov rovnakého typu."
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -224,7 +239,8 @@
     "question": "<p>Máme kontajner <i>mena</i>, ktorý obsahuje prvky</p><p>\"Michal\", \"Janko\", \"Štefan\"</p><p><br></p><p>Ako bude vyzerať kontajner po vykonaní nasledovných príkazov</p><p>mena.add(\"Peter\");</p><p>mena.remove(1);</p><p><br></p>",
     "answer": [
       "\"Michal\", \"Štefan\", \"Peter\""
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -232,7 +248,8 @@
     "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ktoré z nasledujúcich tried môžme využiť na zápis textu do súboru?<br></p>",
     "answer": [
       "PrintWriter"
-    ]
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -240,6 +257,7 @@
     "question": "<p>Anonymný objekt je:<br></p>",
     "answer": [
       "Inštancia, ktorá nemá názov a nie je priradená do premennej"
-    ]
+    ],
+    "type": "checkbox"
   }
 ]

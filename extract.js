@@ -16,7 +16,7 @@ let extractFormData = () => {
     pointsRegexPattern.lastIndex = 0
     resultObj.points = pointsCorrect
     resultObj.maxPoints = pointsAll
-    // QUESTION
+    // QUESTION HEADER
     const cDiv = qDiv.querySelector('.content div')
     const questionText = cDiv.querySelector(':nth-child(3)').innerHTML
     resultObj.question = questionText
@@ -26,6 +26,7 @@ let extractFormData = () => {
       const aBlockItems = [...aBlock.querySelectorAll('tr')]
       if (aBlockItems.length > 0) {
         // COMBOBOX ANSWER
+        resultObj.type = 'combobox'
         resultObj.answer = aBlockItems.map((i) => {
           const aBlockItemResult = {}
           const aBlockItemText = i.querySelector('td.text').textContent
@@ -44,12 +45,14 @@ let extractFormData = () => {
           const relevantCheckboxItems = aBlockItemsAnswer.filter((i) =>
             i.querySelector('input:checked')
           )
+          resultObj.type = 'checkbox'
           resultObj.answer = relevantCheckboxItems.map(
             (i) => i.querySelector('[data-region="answer-label"]').textContent
           )
           return resultObj
         } else {
           // SINGLE LINE INPUT
+          resultObj.type = 'single-input'
           resultObj.answer = aBlockItemsAnswer[0].value
           return resultObj
         }
@@ -59,6 +62,7 @@ let extractFormData = () => {
       const pItems = [...cDiv.querySelectorAll('p')]
         .slice(1)
         .filter((i) => i.getAttribute('id')?.length > 0)
+      resultObj.type = 'multi-input'
       resultObj.answer = pItems.map((i) => ({
         question: i.innerText.replaceAll('\n', '').replaceAll('Odpoveď', ''),
         answer: i.querySelector('span input').value,
