@@ -1,4 +1,4 @@
-let extractFormData = () => {
+const extractFormData = () => {
   const pointsRegexPattern =
     /^Známka.([0-9]{1},[0-9]{2}).z.([0-9]{1},[0-9]{2})/gm
 
@@ -34,7 +34,7 @@ let extractFormData = () => {
           const aBlockItemValue = i.querySelector(
             'td.control select option:checked'
           ).textContent
-          aBlockItemResult.asnwer = aBlockItemValue
+          aBlockItemResult.answer = aBlockItemValue
           return aBlockItemResult
         })
         return resultObj
@@ -51,14 +51,14 @@ let extractFormData = () => {
           )
           return resultObj
         } else {
-          // SINGLE LINE INPUT
+          // SINGLE INPUT
           resultObj.type = 'single-input'
           resultObj.answer = aBlockItemsAnswer[0].value
           return resultObj
         }
       }
     } else {
-      // INPUT
+      // MULTI INPUT
       const pItems = [...cDiv.querySelectorAll('p')]
         .slice(1)
         .filter((i) => i.getAttribute('id')?.length > 0)

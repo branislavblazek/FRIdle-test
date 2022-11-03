@@ -30,35 +30,35 @@
     "answer": [
       {
         "question": "cislo = obaleneCislo;",
-        "asnwer": "OK"
+        "answer": "OK"
       },
       {
         "question": "obaleneCislo = obaleneCisloSHodnotou;",
-        "asnwer": "OK"
+        "answer": "OK"
       },
       {
         "question": "obaleneCisloSHodnotou++;",
-        "asnwer": "ZLE"
+        "answer": "ZLE"
       },
       {
         "question": "cislo = obaleneCisloSHodnotou + 5;",
-        "asnwer": "OK"
+        "answer": "OK"
       },
       {
         "question": "obaleneCislo = obaleneCisloSHodnotou + cislo;",
-        "asnwer": "OK"
+        "answer": "OK"
       },
       {
         "question": "cislo = obaleneCisloSHodnotou;",
-        "asnwer": "OK"
+        "answer": "OK"
       },
       {
         "question": "obaleneCislo = new Integer(3.14);",
-        "asnwer": "ZLE"
+        "answer": "ZLE"
       },
       {
         "question": "obaleneCislo = cislo;",
-        "asnwer": "OK"
+        "answer": "OK"
       }
     ],
     "type": "combobox"
@@ -70,15 +70,15 @@
     "answer": [
       {
         "question": "Boxing",
-        "asnwer": "Prevod primitívneho typu na objektový"
+        "answer": "Prevod primitívneho typu na objektový"
       },
       {
         "question": "Unboxing",
-        "asnwer": "Prevod objektového typu na primitívny"
+        "answer": "Prevod objektového typu na primitívny"
       },
       {
         "question": "Typová kompatibilita",
-        "asnwer": "Automatická konverzia medzi primitívnym typom a obaľovaciou triedou"
+        "answer": "Automatická konverzia medzi primitívnym typom a obaľovaciou triedou"
       }
     ],
     "type": "combobox"

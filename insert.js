@@ -11,7 +11,6 @@ var insertFormData = () => {
     const question = cDiv.querySelector(':nth-child(3)').innerHTML
     questionObject[question] = cDiv
   })
-  // iterate over data
   d.forEach((result) => {
     const relevantDiv = questionObject[result.question]
     if (result.type === 'checkbox') {
@@ -29,6 +28,46 @@ var insertFormData = () => {
       // SINGLE-INPUT
       const relevantInput = relevantDiv.querySelector('.ablock .answer input')
       relevantInput.value = result.answer
+    }
+    if (result.type === 'combobox') {
+      // COMBOBOX
+      const targetChildren = [
+        ...relevantDiv
+          .querySelector('div.ablock .answer')
+          .querySelectorAll('tr'),
+      ]
+      targetChildren.forEach((item) => {
+        const questionText = item.querySelector('td.text').textContent
+        const relevantAnswer = result.answer.find(
+          (a) => a.question === questionText
+        ).answer
+        const availableOptions = [
+          ...item.querySelectorAll('td.control select option'),
+        ]
+        availableOptions.forEach((option) => {
+          if (option.textContent === relevantAnswer) {
+            option.selected = true
+          }
+        })
+      })
+    }
+    if (result.type === 'multi-input') {
+      const pItems = [...relevantDiv.querySelectorAll('p')]
+        .slice(1)
+        .filter(
+          (i) =>
+            i.querySelector('span.subquestion')?.getAttribute('id')?.length > 0
+        )
+      pItems.forEach((item) => {
+        const questionText = item.innerText
+          .replaceAll('\n', '')
+          .replaceAll('Odpoveď', '')
+        const relevantAnswer = result.answer.find(
+          (a) => a.question === questionText
+        ).answer
+        const relevantInput = item.querySelector('span.subquestion input')
+        relevantInput.value = relevantAnswer
+      })
     }
   })
 }
