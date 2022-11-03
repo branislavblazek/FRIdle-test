@@ -30,7 +30,7 @@
     "answer": [
       {
         "question": "cislo = obaleneCislo;",
-        "answer": "OK"
+        "answer": "ZLE"
       },
       {
         "question": "obaleneCislo = obaleneCisloSHodnotou;",
@@ -38,7 +38,7 @@
       },
       {
         "question": "obaleneCisloSHodnotou++;",
-        "answer": "ZLE"
+        "answer": "OK"
       },
       {
         "question": "cislo = obaleneCisloSHodnotou + 5;",
