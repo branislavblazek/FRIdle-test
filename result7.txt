@@ -1,167 +1,5 @@
 [
   {
-    "points": "4,00",
-    "maxPoints": "4,00",
-    "question": "Doplňte štandardnú obaľovaciu triedu, v jazyku Java, pre nasledovné typy:",
-    "answer": [
-      {
-        "question": "int - ",
-        "answer": "Integer"
-      },
-      {
-        "question": "double - ",
-        "answer": "Double"
-      },
-      {
-        "question": "boolean - ",
-        "answer": "Boolean"
-      },
-      {
-        "question": "char - ",
-        "answer": "Character"
-      }
-    ],
-    "type": "multi-input"
-  },
-  {
-    "points": "0,75",
-    "maxPoints": "1,00",
-    "question": "<p>Ktoré z príkazov priradenia sú správne, ak máme definované nasledovné premenné:</p>\n<pre>  int cislo = 5;\n  Integer obaleneCislo;\n  Integer obaleneCisloSHodnotou = new Integer(5);\n</pre>",
-    "answer": [
-      {
-        "question": "cislo = obaleneCislo;",
-        "answer": "ZLE"
-      },
-      {
-        "question": "obaleneCislo = obaleneCisloSHodnotou;",
-        "answer": "OK"
-      },
-      {
-        "question": "obaleneCisloSHodnotou++;",
-        "answer": "OK"
-      },
-      {
-        "question": "cislo = obaleneCisloSHodnotou + 5;",
-        "answer": "OK"
-      },
-      {
-        "question": "obaleneCislo = obaleneCisloSHodnotou + cislo;",
-        "answer": "OK"
-      },
-      {
-        "question": "cislo = obaleneCisloSHodnotou;",
-        "answer": "OK"
-      },
-      {
-        "question": "obaleneCislo = new Integer(3.14);",
-        "answer": "ZLE"
-      },
-      {
-        "question": "obaleneCislo = cislo;",
-        "answer": "OK"
-      }
-    ],
-    "type": "combobox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "Priraďte správne tvrdenia ohľadom konverzie medzi primitívnymi a objektovými typmi:<br>",
-    "answer": [
-      {
-        "question": "Boxing",
-        "answer": "Prevod primitívneho typu na objektový"
-      },
-      {
-        "question": "Unboxing",
-        "answer": "Prevod objektového typu na primitívny"
-      },
-      {
-        "question": "Typová kompatibilita",
-        "answer": "Automatická konverzia medzi primitívnym typom a obaľovaciou triedou"
-      }
-    ],
-    "type": "combobox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "ArrayList môže obsahovať prvky typu:<br>",
-    "answer": [
-      "vlastná definovaná trieda (napr. class Poznamka)",
-      "String"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p>Napíšte hlavičku cyklu while, ktorý sa bude vykonávať pokiaľ premenná i menej ako 5.</p><p>Dodržujte konvencie<br></p>",
-    "answer": "while (i < 5)",
-    "type": "single-input"
-  },
-  {
-    "points": "0,00",
-    "maxPoints": "1,00",
-    "question": "<p>Pod pojmom \"obaľovacia trieda\" v Jave rozumieme:<br></p>",
-    "answer": [
-      "Slúži na \"zaobalenie\" premennej primitívneho typu do objektového typu."
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "Zapíšte deklaráciu cyklu <b>foreach</b>, ktorý prejde všetky prvky kontajnera <b>mena </b>(typ ArrayList&lt;String&gt; vytvorený ako lokálna premenná). Iteračnú premennú pomenujte ako <b>meno</b>:<br>",
-    "answer": [
-      {
-        "question": " {",
-        "answer": "for (String meno : mena)"
-      }
-    ],
-    "type": "multi-input"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p>Ako sa v jazyku Java volá trieda, v ktorej je implementovaný kontajner s dynamickým počtom prvkom?<br></p>",
-    "answer": [
-      "ArrayList"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "Deklarujte atribút typu ArrayList, do ktorého budeme môcť ukladať desatinné čísla typu double.",
-    "answer": [
-      {
-        "question": "private  cisla;",
-        "answer": "ArrayList<Double>"
-      }
-    ],
-    "type": "multi-input"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Na čítanie zo súboru môžme využiť:<br></p>",
-    "answer": [
-      "Scanner"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p>S prvkami kontajnera ArrayList môžeme v cykle foreach:<br></p>",
-    "answer": [
-      "Posielať správy",
-      "Meniť hodnoty atribútov"
-    ],
-    "type": "checkbox"
-  },
-  {
     "points": "9,00",
     "maxPoints": "9,00",
     "question": "<b>Deklarujte atribút, do ktorého budeme môcť ukladať viacero reťazcov (kontajner). Dodržujte konvencie.</b>",
@@ -208,9 +46,186 @@
   {
     "points": "1,00",
     "maxPoints": "1,00",
+    "question": "<p>Pod pojmom \"obaľovacia trieda\" v Jave rozumieme:<br></p>",
+    "answer": [
+      "Slúži na \"zaobalenie\" premennej primitívneho typu do objektového typu."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>S prvkami kontajnera ArrayList môžeme v cykle foreach:<br></p>",
+    "answer": [
+      "Posielať správy",
+      "Meniť hodnoty atribútov"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ktoré z nasledujúcich tried môžme využiť na zápis textu do súboru?<br></p>",
+    "answer": [
+      "PrintWriter"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Anonymný objekt je:<br></p>",
+    "answer": [
+      "Inštancia, ktorá nemá názov a nie je priradená do premennej"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
     "question": "<p>Napíšte príkaz, pomocou ktorého \"vložíte\" do vašej vlastnej triedy truedu ArrayList (tak aby ste ho mohli používať).<br></p>",
     "answer": "import java.util.ArrayList;",
     "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Na čítanie zo súboru môžme využiť:<br></p>",
+    "answer": [
+      "Scanner"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Máme kontajner <i>mena</i>, ktorý obsahuje prvky</p><p>\"Michal\", \"Janko\", \"Štefan\"</p><p><br></p><p>Ako bude vyzerať kontajner po vykonaní nasledovných príkazov</p><p>mena.add(\"Peter\");</p><p>mena.remove(1);</p><p><br></p>",
+    "answer": [
+      "\"Michal\", \"Štefan\", \"Peter\""
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "Zapíšte deklaráciu cyklu <b>foreach</b>, ktorý prejde všetky prvky kontajnera <b>mena </b>(typ ArrayList&lt;String&gt; vytvorený ako lokálna premenná). Iteračnú premennú pomenujte ako <b>meno</b>:<br>",
+    "answer": [
+      {
+        "question": " {",
+        "answer": "for (String meno : mena)"
+      }
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Napíšte hlavičku cyklu while, ktorý sa bude vykonávať pokiaľ premenná i menej ako 5.</p><p>Dodržujte konvencie<br></p>",
+    "answer": "while (i < 5)",
+    "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "Priraďte správne tvrdenia ohľadom konverzie medzi primitívnymi a objektovými typmi:<br>",
+    "answer": [
+      {
+        "question": "Typová kompatibilita",
+        "answer": "Automatická konverzia medzi primitívnym typom a obaľovaciou triedou"
+      },
+      {
+        "question": "Boxing",
+        "answer": "Prevod primitívneho typu na objektový"
+      },
+      {
+        "question": "Unboxing",
+        "answer": "Prevod objektového typu na primitívny"
+      }
+    ],
+    "type": "combobox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Ako sa v jazyku Java volá trieda, v ktorej je implementovaný kontajner s dynamickým počtom prvkom?<br></p>",
+    "answer": [
+      "ArrayList"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "4,00",
+    "maxPoints": "4,00",
+    "question": "Doplňte štandardnú obaľovaciu triedu, v jazyku Java, pre nasledovné typy:",
+    "answer": [
+      {
+        "question": "int - ",
+        "answer": "Integer"
+      },
+      {
+        "question": "double - ",
+        "answer": "Double"
+      },
+      {
+        "question": "boolean - ",
+        "answer": "Boolean"
+      },
+      {
+        "question": "char - ",
+        "answer": "Character"
+      }
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "ArrayList môže obsahovať prvky typu:<br>",
+    "answer": [
+      "vlastná definovaná trieda (napr. class Poznamka)",
+      "String"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Ktoré z príkazov priradenia sú správne, ak máme definované nasledovné premenné:</p>\n<pre>  int cislo = 5;\n  Integer obaleneCislo;\n  Integer obaleneCisloSHodnotou = new Integer(5);\n</pre>",
+    "answer": [
+      {
+        "question": "cislo = obaleneCisloSHodnotou + 5;",
+        "answer": "OK"
+      },
+      {
+        "question": "obaleneCislo = cislo;",
+        "answer": "OK"
+      },
+      {
+        "question": "obaleneCislo = obaleneCisloSHodnotou;",
+        "answer": "OK"
+      },
+      {
+        "question": "cislo = obaleneCislo;",
+        "answer": "ZLE"
+      },
+      {
+        "question": "obaleneCisloSHodnotou++;",
+        "answer": "OK"
+      },
+      {
+        "question": "obaleneCislo = new Integer(3.14);",
+        "answer": "ZLE"
+      },
+      {
+        "question": "cislo = obaleneCisloSHodnotou;",
+        "answer": "OK"
+      },
+      {
+        "question": "obaleneCislo = obaleneCisloSHodnotou + cislo;",
+        "answer": "OK"
+      }
+    ],
+    "type": "combobox"
   },
   {
     "points": "1,00",
@@ -236,28 +251,13 @@
   {
     "points": "1,00",
     "maxPoints": "1,00",
-    "question": "<p>Máme kontajner <i>mena</i>, ktorý obsahuje prvky</p><p>\"Michal\", \"Janko\", \"Štefan\"</p><p><br></p><p>Ako bude vyzerať kontajner po vykonaní nasledovných príkazov</p><p>mena.add(\"Peter\");</p><p>mena.remove(1);</p><p><br></p>",
+    "question": "Deklarujte atribút typu ArrayList, do ktorého budeme môcť ukladať desatinné čísla typu double.",
     "answer": [
-      "\"Michal\", \"Štefan\", \"Peter\""
+      {
+        "question": "private  cisla;",
+        "answer": "ArrayList<Double>"
+      }
     ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ktoré z nasledujúcich tried môžme využiť na zápis textu do súboru?<br></p>",
-    "answer": [
-      "PrintWriter"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p>Anonymný objekt je:<br></p>",
-    "answer": [
-      "Inštancia, ktorá nemá názov a nie je priradená do premennej"
-    ],
-    "type": "checkbox"
+    "type": "multi-input"
   }
 ]
