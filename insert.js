@@ -11,7 +11,7 @@ var insertFormData = () => {
     const question = cDiv.querySelector(':nth-child(3)').innerHTML
     questionObject[question] = cDiv
   })
-  d.forEach((result) => {
+  ab.forEach((result) => {
     const relevantDiv = questionObject[result.question]
     if (result.type === 'checkbox') {
       // CHECKBOX
@@ -62,9 +62,11 @@ var insertFormData = () => {
         const questionText = item.innerText
           .replaceAll('\n', '')
           .replaceAll('Odpoveď', '')
-        const relevantAnswer = result.answer.find(
+        const relevantAnswerIndex = result.answer.findIndex(
           (a) => a.question === questionText
-        ).answer
+        )
+        const relevantAnswer = result.answer[relevantAnswerIndex].answer
+        result.answer.splice(relevantAnswerIndex, 1)
         const relevantInput = item.querySelector('span.subquestion input')
         relevantInput.value = relevantAnswer
       })
