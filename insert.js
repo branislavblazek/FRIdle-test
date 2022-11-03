@@ -1,4 +1,10 @@
 var insertFormData = () => {
+  const localStorageData = localStorage.getItem('fridle-test-json')
+  if (!localStorageData) {
+    console.log('source data not found!')
+    return null
+  }
+  const data = JSON.parse(localStorageData)
   const main = document.querySelector('#region-main')
   const form = [...main.querySelector('form div').children]
   const relevantDivs = form.filter((qDiv) => {
@@ -11,7 +17,7 @@ var insertFormData = () => {
     const question = cDiv.querySelector(':nth-child(3)').innerHTML
     questionObject[question] = cDiv
   })
-  dd.forEach((result) => {
+  data.forEach((result) => {
     const relevantDiv = questionObject[result.question]
     if (result.type === 'checkbox') {
       // CHECKBOX

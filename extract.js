@@ -70,5 +70,7 @@ const extractFormData = () => {
     }
     return resultObj
   })
+  const encoded = JSON.stringify(data)
+  localStorage.setItem('fridle-test-json', encoded)
   return data
 }
