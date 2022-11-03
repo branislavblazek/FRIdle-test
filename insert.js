@@ -11,7 +11,7 @@ var insertFormData = () => {
     const question = cDiv.querySelector(':nth-child(3)').innerHTML
     questionObject[question] = cDiv
   })
-  ab.forEach((result) => {
+  dd.forEach((result) => {
     const relevantDiv = questionObject[result.question]
     if (result.type === 'checkbox') {
       // CHECKBOX
