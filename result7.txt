@@ -105,7 +105,7 @@
     "maxPoints": "1,00",
     "question": "<p>Pod pojmom \"obaľovacia trieda\" v Jave rozumieme:<br></p>",
     "answer": [
-      "Slúži na \"zaobalenie\" objektového typu do premennej primitívneho typu."
+      "Slúži na \"zaobalenie\" primitívneho typu do premennej objektového typu."
     ],
     "type": "checkbox"
   },
