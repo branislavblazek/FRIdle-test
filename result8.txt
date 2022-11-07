@@ -1,0 +1,152 @@
+[
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "Inicializujte vymenovaním pole 2x2 tak, aby po inicializovaní obsahovalo nasledujúce hodnoty:",
+    "answer": [
+      {
+        "question": "matica = new int[][];",
+        "answer": "{{1, 2}, {3, 4}}"
+      }
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Prvkom poľa môže byť:<br></p>",
+    "answer": [
+      "Primitívny typ",
+      "Pole",
+      "Objektový typ"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Koľko rozmerné pole môžeme vytvoriť?<br></p>",
+    "answer": [
+      "Pole môžeme vytvoriť s ľubovolným rozmerom"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Ktoré z tvrdení platia pre cyklus for:<br></p>",
+    "answer": [
+      "Deklarácia sa skladá z troch častí",
+      "Opakuje telo cyklu, kým platí podmienka"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Deklarujte a inicializujte lokálnu premennú <b>pole</b>, ktorá bude typu pole celých čísel (int) a bude mať 12 prvkov.</p><p>Dodržujte konvencie!<br></p>",
+    "answer": "int[] pole = new int[12];",
+    "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Majme dve inštancie obdĺžnika:</p>\n<pre>Obdlznik ob1 = new Obdlznik();\nObdlznik ob2 = new Obdlznik();\n</pre><p>Deklarujte a inicializujte vymenovaním prvkov lokálnu premennú <b>obdlzniky</b> typu pole, ktorá bude po inicializácii obsahovať na indexe 0 inštanciu ob1 a na indexe 1 inštanciu ob2.</p><p><br></p><p>Dodržujte konvencie!<br></p><p><br></p><p><br></p>",
+    "answer": "Obdlznik[] obdlzniky = { ob1, ob2 };",
+    "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "Prejdite pomocou cyklu foreach dvojrozmerné pole typu int:",
+    "answer": [],
+    "type": "multi-input"
+  },
+  {
+    "points": "4,00",
+    "maxPoints": "4,00",
+    "question": "Deklarujte atribút, ktorý bude obsahovať dvojrozmerné pole celých čísiel typu int:",
+    "answer": [
+      {
+        "question": "private  matica;",
+        "answer": "int[][]"
+      },
+      {
+        "question": "this.matica = ;",
+        "answer": "new int[5][5]"
+      },
+      {
+        "question": "this.matica = ;",
+        "answer": "new int[5][]"
+      },
+      {
+        "question": "this.matica;",
+        "answer": "[0][2]"
+      }
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "3,00",
+    "maxPoints": "3,00",
+    "question": "Majme deklarované pole celých čísel:",
+    "answer": [
+      {
+        "question": "prvý prvok poľa ",
+        "answer": "cisla[0];"
+      },
+      {
+        "question": "druhý prvok poľa ",
+        "answer": "cisla[1];"
+      },
+      {
+        "question": "posledný prvok poľa ",
+        "answer": "cisla[cisla.length - 1];"
+      }
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Pole je:<br></p>",
+    "answer": [
+      "Objektový typ",
+      "Kontajner s fixným počtom prvkov"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Máme deklarované a inicializované pole nasledovne:</p><p>int[][] matica = new int[5][];</p><p>Čo spraví nasledujúci príkaz:</p><p>matica[2][3] = 5;<br></p>",
+    "answer": [
+      "Skončí chybou, lebo pole nie je správne inicializované"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "4,00",
+    "maxPoints": "4,00",
+    "question": "Dopíšte východziu hodnotu prvkov poľa v jazyku Java:",
+    "answer": [
+      {
+        "question": "Pole celých čísel (int) ",
+        "answer": "0"
+      },
+      {
+        "question": "Pole boolean ",
+        "answer": "false"
+      },
+      {
+        "question": "Pole Stringov ",
+        "answer": "null"
+      },
+      {
+        "question": "Pole Obdlznikov ",
+        "answer": "null"
+      }
+    ],
+    "type": "multi-input"
+  }
+]

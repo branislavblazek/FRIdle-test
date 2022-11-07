@@ -16,7 +16,7 @@ script.type = 'text/javascript'
 script.src =
   'https://cdn.jsdelivr.net/gh/branislavblazek/FRIdle-test@master/extract.js'
 document.head.appendChild(script)
-extractFormData()
+setTimeout(() => extractFormData(), 500)
 ```
 
 4. now data are saved to local storage and if you want you can optionally copy data which returned function
@@ -28,6 +28,7 @@ script.type = 'text/javascript'
 script.src =
   'https://cdn.jsdelivr.net/gh/branislavblazek/FRIdle-test@master/insert.js'
 document.head.appendChild(script)
+setTimeout(() => insertFormData(), 500)
 ```
 
 6. test now should be filled with answers from last test:)
