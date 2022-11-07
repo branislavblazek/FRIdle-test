@@ -4,7 +4,8 @@ var insertFormData = () => {
     console.log('source data not found!')
     return null
   }
-  const data = JSON.parse(localStorageData)
+  const allData = JSON.parse(localStorageData)
+  const data = allData.filter((item) => item.points === item.maxPoints)
   const main = document.querySelector('#region-main')
   const form = [...main.querySelector('form div').children]
   const relevantDivs = form.filter((qDiv) => {
