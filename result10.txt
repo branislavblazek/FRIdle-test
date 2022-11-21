@@ -1,0 +1,196 @@
+[
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Pri deklarácii enumu môže implementovať:<br></p>",
+    "answer": [
+      "Konštruktor",
+      "Metódy",
+      "Atribúty"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Enum (vymenovaný typ) je:<br></p>",
+    "answer": [
+      "Trieda s konštantnou extenziou.",
+      "Trieda s pevne určenými inštanciami."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Trieda v Jave:<br></p>",
+    "answer": [
+      "Je objekt, ktorý môže mať vlastné správy a stav."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Prístup triedy k atribútom a správam inštancií:<br></p>",
+    "answer": [
+      "Trieda môže \"volať\" súkromné metódy inštancií.",
+      "Trieda môže pristupovať ku všetkým (aj privátnym) atribútom inštancie."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Čo platí pre triedu, ktorá je \"singleton\" (jedináčik):<br></p>",
+    "answer": [
+      "Má privátny konštruktor.",
+      "Má metódu triedy, ktorá vracia inštanciu danej triedy.",
+      "Má aspoň jeden atribút triedy."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Pod pojmom \"extenzia triedy\" rozumieme:<br></p>",
+    "answer": [
+      "Množina všetkých inštancií triedy."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "6,00",
+    "maxPoints": "6,00",
+    "question": "Deklarujte atribút, v ktorom budeme uchovávať inštanciu pri použití singletonu a doplňte chýbajúce metódy:<br>",
+    "answer": [
+      "private static Appka",
+      "private Appka",
+      "public static Appka",
+      "Appka.instance == null",
+      "Appka.instance = new Appka();",
+      "Appka.instance"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "Máme triedu Appka, ktorá je singleton a má metódu getInstance.&nbsp;Získajte inštanciu tejto triedy:",
+    "answer": [
+      "Appka.getInstance()"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "2,00",
+    "maxPoints": "2,00",
+    "question": "PRAZDNE",
+    "answer": [
+      "PRAZDNE(\"O\"), PLNE(\"X\");"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Akým spôsobom označujeme atribúty / metódy triedy?<br></p>",
+    "answer": [
+      "V UML podčiarknutím",
+      "Kľúčovým slovom static"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Prístup inštancie k atribútom a správam triedy:<br></p>",
+    "answer": [
+      "Inštancia môže pristupovať ku všetkým (aj privátnym) atribútom triedy.",
+      "Inštancia môže \"volať\" súkromné metódy triedy."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Enum je v programovacom jazyku Java:<br></p>",
+    "answer": [
+      "Objektový typ"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Majme definovanú nasledovnú triedu. Ktoré atribúty patria triede a ktoré inštancii?</p>\n\n<pre>class Automobil {\n  public static String znacka = \"BMW\";\n  private static int pocetKolies;\n  private int cislo;\n  private String farba;\n}\n\n</pre>",
+    "answer": [
+      {
+        "question": "cislo",
+        "answer": "Inštancia"
+      },
+      {
+        "question": "pocetKolies",
+        "answer": "Trieda"
+      },
+      {
+        "question": "znacka",
+        "answer": "Trieda"
+      },
+      {
+        "question": "farba",
+        "answer": "Inštancia"
+      }
+    ],
+    "type": "combobox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Kedy v jazyku Java vzniká objekt triedy?<br></p>",
+    "answer": [
+      "Trieda vzniká pri prvom použití."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "2,00",
+    "maxPoints": "2,00",
+    "question": "Deklarujte enum StavPolicka, ktorý bude môcť nadobúdať hodnoty \"<strong>PRAZDNE</strong>\" a <strong>ZAPLNENE</strong>\":",
+    "answer": [
+      "public enum StavPolicka",
+      "PRAZDNE, ZAPLNENE"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Akým spôsobom značíme vymenovaný typ (enum) v UML?<br></p>",
+    "answer": [
+      "Pomocou stereotypu \"enum\"."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "3,00",
+    "maxPoints": "3,00",
+    "question": "",
+    "answer": [
+      "StavPolicka",
+      "StavPolicka.PRAZDNE",
+      "stav == StavPolicka.PRAZDNE"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p>Singleton (jedináčik) je:<br></p>",
+    "answer": [
+      "Prípad, keď požadujeme, aby trieda mala len jednu inštanciu.",
+      "Návrhový vzor."
+    ],
+    "type": "checkbox"
+  }
+]

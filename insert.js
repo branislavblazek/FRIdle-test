@@ -1,4 +1,4 @@
-var insertFormData = () => {
+;(function () {
   const localStorageData = localStorage.getItem('fridle-test-json')
   if (!localStorageData) {
     console.log('source data not found!')
@@ -59,24 +59,21 @@ var insertFormData = () => {
       })
     }
     if (result.type === 'multi-input') {
-      const pItems = [...relevantDiv.querySelectorAll('p')]
+      const source1 = [...relevantDiv.querySelectorAll('p')]
         .slice(1)
         .filter(
           (i) =>
             i.querySelector('span.subquestion')?.getAttribute('id')?.length > 0
         )
-      pItems.forEach((item) => {
-        const questionText = item.innerText
-          .replaceAll('\n', '')
-          .replaceAll('Odpoveď', '')
-        const relevantAnswerIndex = result.answer.findIndex(
-          (a) => a.question === questionText
-        )
-        const relevantAnswer = result.answer[relevantAnswerIndex].answer
-        result.answer.splice(relevantAnswerIndex, 1)
+      const source2 = [
+        ...(relevantDiv?.querySelectorAll('pre')[0]?.children || ''),
+      ]
+      const pItems = source1.length ? source1 : source2
+      pItems.forEach((item, index) => {
+        const relevantAnswer = result.answer[index]
         const relevantInput = item.querySelector('span.subquestion input')
         relevantInput.value = relevantAnswer
       })
     }
   })
-}
+})()

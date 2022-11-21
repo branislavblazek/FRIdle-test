@@ -1,4 +1,4 @@
-const extractFormData = () => {
+;(function () {
   const pointsRegexPattern =
     /^Známka.([0-9]{1},[0-9]{2}).z.([0-9]{1},[0-9]{2})/gm
 
@@ -59,18 +59,17 @@ const extractFormData = () => {
       }
     } else {
       // MULTI INPUT
-      const pItems = [...cDiv.querySelectorAll('p')]
+      const source1 = [...cDiv?.querySelectorAll('p')]
         .slice(1)
         .filter((i) => i.getAttribute('id')?.length > 0)
+      const source2 = [...(cDiv?.querySelectorAll('pre')[0]?.children || '')]
+      const pItems = source1.length ? source1 : source2
       resultObj.type = 'multi-input'
-      resultObj.answer = pItems.map((i) => ({
-        question: i.innerText.replaceAll('\n', '').replaceAll('Odpoveď', ''),
-        answer: i.querySelector('span input').value,
-      }))
+      resultObj.answer = pItems.map((i) => i.querySelector('span input').value)
     }
     return resultObj
   })
   const encoded = JSON.stringify(data)
   localStorage.setItem('fridle-test-json', encoded)
   return data
-}
+})()
