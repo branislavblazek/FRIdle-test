@@ -2,11 +2,43 @@
   {
     "points": "1,00",
     "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Pod pojmom \"identifikátor metódy\" rozumieme:<br></p>",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Prečo musíme označovať atribúty ako súkromné?<br></p>",
     "answer": [
-      "Štruktúra, ktorá popisuje názov metódy a typy formálnych parametrov."
+      "Ostatné objekty sú závislé na vnútornej implementácii môjho objektu.",
+      "Objekt nemá kontrolu nad svojím vlastným stavom.",
+      "Verejne prístupné atribúty porušujú zapuzdrenie."
     ],
     "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Preťažiť môžeme:<br></p>",
+    "answer": [
+      "Metódu",
+      "Konštruktor"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Pri pohľade na objekt popíšte význam jednotlivých častí objektu:<br></p>",
+    "answer": [
+      {
+        "question": "Dátová časť objektu",
+        "answer": "atribúty"
+      },
+      {
+        "question": "Rozhranie objektu",
+        "answer": "správy"
+      },
+      {
+        "question": "Správanie sa objektu",
+        "answer": "metódy"
+      }
+    ],
+    "type": "combobox"
   },
   {
     "points": "1,00",
@@ -21,58 +53,19 @@
   {
     "points": "1,00",
     "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Čo sú to tzv. immutable objekty?<br></p>",
+    "answer": [
+      "Objekty, ktoré majú stav napevno definovaný na začiatku životného cyklu.",
+      "V preklade nemeniteľné - nie je možné zmeniť ich stav."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
     "question": "<p dir=\"ltr\" style=\"text-align: left;\">Pomocou ktorého prístupového modifikátora označujeme súkromné časti objektu?<br></p>",
     "answer": "private",
     "type": "single-input"
-  },
-  {
-    "points": "0,50",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Čo sú to tzv. immutable objekty?<br></p>",
-    "answer": [
-      "Objekty, ktoré majú stav napevno definovaný na začiatku životného cyklu."
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ktoré z nasledovných tvrdení popisuje / popisujú zapuzdrenie:<br></p>",
-    "answer": [
-      "Objekt sa sám rozhodne, či a akým spôsobom správu spracuje.",
-      "Objekt zverejňuje len tie informácie o svojom stave, ktoré sám uzná za vhodné."
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Majme nasledujúcu metódu:</p>\n<pre>  public int spocitaj(int a, int b) {\n    // Telo\n  }\n</pre>\n<p>Ktoré z nasledovných metód definujú preťaženú metódu?</p>",
-    "answer": [
-      "  public int spocitaj(int a, int b, int c) {\n    // Telo\n  }\n",
-      "  public double spocitaj(double a, double b) {\n    // Telo\n  }\n"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Prečo je implementačná závislosť problém?<br></p>",
-    "answer": [
-      "Pri zmene implementácie jedného objektu musíme zmeniť implementáciu iných objektov."
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Prečo musíme označovať atribúty ako súkromné?<br></p>",
-    "answer": [
-      "Objekt nemá kontrolu nad svojím vlastným stavom.",
-      "Verejne prístupné atribúty porušujú zapuzdrenie.",
-      "Ostatné objekty sú závislé na vnútornej implementácii môjho objektu."
-    ],
-    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -96,19 +89,56 @@
   {
     "points": "1,00",
     "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Preťažiť môžeme:<br></p>",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Akým kľúčovým slovom označujeme v Jave konštantné atribúty?<br></p>",
+    "answer": "final",
+    "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ktoré z nasledovných tvrdení popisuje / popisujú zapuzdrenie:<br></p>",
     "answer": [
-      "Konštruktor",
-      "Metódu"
+      "Objekt zverejňuje len tie informácie o svojom stave, ktoré sám uzná za vhodné.",
+      "Objekt sa sám rozhodne, či a akým spôsobom správu spracuje."
     ],
     "type": "checkbox"
   },
   {
     "points": "1,00",
     "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Akým kľúčovým slovom označujeme v Jave konštantné atribúty?<br></p>",
-    "answer": "final",
-    "type": "single-input"
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Prečo je implementačná závislosť problém?<br></p>",
+    "answer": [
+      "Pri zmene implementácie jedného objektu musíme zmeniť implementáciu iných objektov."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Preťažovanie metód znamená:<br></p>",
+    "answer": [
+      "Dve metódy s rovnakým názvom majú rôzne parametre."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Majme nasledujúcu metódu:</p>\n<pre>  public int spocitaj(int a, int b) {\n    // Telo\n  }\n</pre>\n<p>Ktoré z nasledovných metód definujú preťaženú metódu?</p>",
+    "answer": [
+      "  public int spocitaj(int a, int b, int c) {\n    // Telo\n  }\n",
+      "  public double spocitaj(double a, double b) {\n    // Telo\n  }\n"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Pod pojmom \"identifikátor metódy\" rozumieme:<br></p>",
+    "answer": [
+      "Štruktúra, ktorá popisuje názov metódy a typy formálnych parametrov."
+    ],
+    "type": "checkbox"
   },
   {
     "points": "1,00",
@@ -117,35 +147,6 @@
     "answer": [
       "Spôsob opakovania toho istého kódu",
       "Prípad, kedy metóda \"volá\" sama seba"
-    ],
-    "type": "checkbox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Pri pohľade na objekt popíšte význam jednotlivých častí objektu:<br></p>",
-    "answer": [
-      {
-        "question": "Správanie sa objektu",
-        "answer": "metódy"
-      },
-      {
-        "question": "Rozhranie objektu",
-        "answer": "správy"
-      },
-      {
-        "question": "Dátová časť objektu",
-        "answer": "atribúty"
-      }
-    ],
-    "type": "combobox"
-  },
-  {
-    "points": "1,00",
-    "maxPoints": "1,00",
-    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Preťažovanie metód znamená:<br></p>",
-    "answer": [
-      "Dve metódy s rovnakým názvom majú rôzne parametre."
     ],
     "type": "checkbox"
   }
