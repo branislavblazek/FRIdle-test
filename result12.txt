@@ -1,0 +1,101 @@
+[
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Ako sa volá virutálny processor pre javu?<br></p>",
+    "answer": [
+      "JVM"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Cieľový kód:<br></p>",
+    "answer": [
+      "Vyrába prekladač",
+      "Obsahuje inštrukcie pre počítač"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Aká je hlavná výhoda interpretovaných programovacích jazykov (napr. java, python...)?<br></p>",
+    "answer": [
+      "Nezávislosť od operačného systému."
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Akou formou môžme šíriť aplikáciu?<br></p>",
+    "answer": [
+      "Cieľový kód",
+      "Zdrojový kód"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Aké pravidlá platia pre názvy súborov so zdrojovým kódom v jave?<br></p>",
+    "answer": [
+      "Názov súboru musí byť rovnaký ako názov triedy",
+      "Musí mať príponu .java"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Preložte pomocou príkazu v príkazovom riadku triedu HelloWorld</p>",
+    "answer": "javac HelloWorld.java",
+    "type": "single-input"
+  },
+  {
+    "points": "2,00",
+    "maxPoints": "2,00",
+    "question": "Doplňte metódu, ktorá bude vstupným bodom programu.",
+    "answer": [
+      "public static void main",
+      "String[]"
+    ],
+    "type": "multi-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Skompilovaný súbor v programe java má príponu:<br></p>",
+    "answer": [
+      ".class"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Spustite cez príkazový riadok triedu HelloWorld<br></p>",
+    "answer": "java HelloWorld",
+    "type": "single-input"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Behové prostredie pre javu sa volá:<br></p>",
+    "answer": [
+      "JRE"
+    ],
+    "type": "checkbox"
+  },
+  {
+    "points": "1,00",
+    "maxPoints": "1,00",
+    "question": "<p dir=\"ltr\" style=\"text-align: left;\">Akým spôsobom sa vykonávajú programy v programovacom jazyku java?<br></p>",
+    "answer": [
+      "Program v programovacom jazyku java vykonáva virtuálnym počítačom."
+    ],
+    "type": "checkbox"
+  }
+]
